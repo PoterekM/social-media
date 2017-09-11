@@ -3,9 +3,13 @@ import Feed from "./Feed";
 import Post from "./Post";
 
 function FeedList(props){
+  var feedListStyes = {
+    border: "1px grey solid",
+    padding: "10px"
+  }
 
   return (
-    <div>
+    <div style={feedListStyes}>
     <Post/>
     <Feed
       username1="Bob"
