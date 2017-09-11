@@ -4,6 +4,7 @@ import FeedList from "./FeedList";
 import ProfileList from "./ProfileList";
 import About from "./About";
 import SideBox from "./SideBox";
+import SideBoxList from "./SideBoxList";
 
 
 function App(props){
@@ -14,6 +15,8 @@ function App(props){
       <ProfileList />
       <About />
       <SideBox/>
+      <SideBoxList/>
+
 
 
     </div>
