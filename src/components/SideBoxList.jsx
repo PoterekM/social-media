@@ -4,6 +4,8 @@ import SideBoxDetail from "./SideBoxDetail";
 
 function SideBoxList(props){
 
+
+
   return (
     <div>
       <SideBoxDetail

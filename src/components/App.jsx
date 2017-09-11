@@ -5,15 +5,28 @@ import ProfileList from "./ProfileList";
 import About from "./About";
 import SideBox from "./SideBox";
 import { Button }  from "react-bootstrap";
-
+import { Container, Row, Col } from "react-grid-system";
 
 function App(props){
   return (
     <div>
       <NavBar/>
-      <FeedList />
-      <ProfileList />
-      <SideBox/>
+
+    <Container>
+      <Row>
+        <Col sm={4}>
+          <ProfileList />
+        </Col>
+        <Col sm={4}>
+          <FeedList />
+        </Col>
+        <Col sm={4}>
+          <SideBox/>
+        </Col>
+      </Row>
+    </Container>
+
+
     </div>
   );
 }
