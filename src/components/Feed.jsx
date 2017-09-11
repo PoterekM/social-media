@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 function Feed(props){
   return (
       <div>
-        <h2>{props.username1}</h2>
+        <h2>Post by: {props.username1}</h2>
         <p>{props.post1}</p>
-        <h2>{props.username2}</h2>
+        <h2>Post by: {props.username2}</h2>
         <p>{props.post2}</p>
       <hr/>
       </div>
