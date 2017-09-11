@@ -6,10 +6,12 @@ function FeedList(props){
 
   return (
     <div>
-    <Post/>  
+    <Post/>
     <Feed
-      username="Bob"
-      post="stuff and stuff"/>
+      username1="Bob"
+      post1="stuff and stuff"
+      username2="Sue"
+      post2="stuff and stuff and stuff"/>
     </div>
   );
 }

@@ -3,6 +3,8 @@ import NavBar from "./NavBar";
 import FeedList from "./FeedList";
 import ProfileList from "./ProfileList";
 import About from "./About";
+import SideBox from "./SideBox";
+
 
 function App(props){
   return (
@@ -11,6 +13,7 @@ function App(props){
       <FeedList />
       <ProfileList />
       <About />
+      <SideBox/>
 
 
     </div>

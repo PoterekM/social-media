@@ -4,16 +4,18 @@ import PropTypes from "prop-types";
 function Feed(props){
   return (
       <div>
-        <h2>{props.username}</h2>
-        <p>{props.post}</p>
-        <hr/>
+        <h2>{props.username1}</h2>
+        <p>{props.post1}</p>
+        <h2>{props.username2}</h2>
+        <p>{props.post2}</p>
+      <hr/>
       </div>
    );
 }
 
 Feed.propTypes = {
-  username: PropTypes.string.isRequired,
-  post: PropTypes.string.isRequired
+  username: PropTypes.string,
+  post: PropTypes.string
 };
 
 export default Feed;
