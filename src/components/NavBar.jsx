@@ -3,8 +3,8 @@ import React from "react";
 function NavBar(props){
   return (
 
-  
-    <button>Messages</button>
+
+    <button>Turds</button>
   );
 }
 
