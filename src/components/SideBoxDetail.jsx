@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SideBox from "./SideBox";
+import { Button }  from "react-bootstrap";
 
 function SideBoxDetail(props) {
   return(
     <div>
       <p>{props.username1}</p>
-      <button type="submit">Stalk</button>
+      <Button bsStyle="primary" bsSize="small">Stalk</Button>
       <p>{props.username2}</p>
       <button type="submit">Stalk</button>
       <p>{props.username3}</p>

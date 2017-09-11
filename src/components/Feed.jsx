@@ -8,7 +8,7 @@ function Feed(props){
         <p>{props.post1}</p>
         <h2>Post by: {props.username2}</h2>
         <p>{props.post2}</p>
-      <hr/>
+  
       </div>
    );
 }

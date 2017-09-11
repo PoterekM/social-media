@@ -4,6 +4,7 @@ import FeedList from "./FeedList";
 import ProfileList from "./ProfileList";
 import About from "./About";
 import SideBox from "./SideBox";
+import { Button }  from "react-bootstrap";
 
 
 function App(props){
@@ -13,10 +14,6 @@ function App(props){
       <FeedList />
       <ProfileList />
       <SideBox/>
-
-
-
-
     </div>
   );
 }
