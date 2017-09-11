@@ -5,7 +5,6 @@ import FeedList from "./FeedList";
 function App(props){
   return (
     <div>
-      <h1>Twatter</h1>
       <NavBar/>
       <FeedList />
     </div>

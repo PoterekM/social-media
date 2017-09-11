@@ -1,10 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
 
-// var heading = React.createElement('h1', {}, 'Twatter');
-//   var App = React.createElement('div', {}, heading);
+import App from './components/App';
 
-ReactDOM.render(
-  <app/>,
+const render = (Component) => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component/>
+    </AppContainer>,
     document.getElementById('react-app-root')
   );
+};
+
+render(App);
+
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    render(App)
+  });
+}

@@ -1,9 +1,11 @@
 import React from "react";
 
-function Header(props){
+function NavBar(props){
   return (
-    <button>Home</button>
-    <button>Notifications</button>
+
+  
     <button>Messages</button>
-  )
+  );
 }
+
+export default NavBar;
