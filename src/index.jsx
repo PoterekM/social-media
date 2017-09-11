@@ -1,9 +1,10 @@
-var heading = React.createElement('h1', {}, 'Twatter');
-  var app = React.createElement('div', {}, heading);
+import React from "react";
+import ReactDOM from "react-dom";
+
+// var heading = React.createElement('h1', {}, 'Twatter');
+//   var App = React.createElement('div', {}, heading);
 
 ReactDOM.render(
-  <div>
-
-  </div>,
+  <app/>,
     document.getElementById('react-app-root')
   );
