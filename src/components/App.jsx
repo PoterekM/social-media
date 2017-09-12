@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import FeedList from "./FeedList";
+import Post from "./Post";
 import ProfileList from "./ProfileList";
 import About from "./About";
 import SideBox from "./SideBox";
@@ -19,7 +19,7 @@ function App(props){
           <ProfileList />
         </Col>
         <Col sm={4}>
-          <FeedList />
+          <Post />
         </Col>
         <Col sm={4}>
           <SideBox/>

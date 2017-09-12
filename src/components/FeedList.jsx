@@ -1,6 +1,8 @@
 import React from "react";
 import Feed from "./Feed";
-import Post from "./Post";
+
+import PropTypes from 'prop-types';
+
 
 function FeedList(props){
   var feedListStyes = {
@@ -10,14 +12,19 @@ function FeedList(props){
 
   return (
     <div style={feedListStyes}>
-    <Post/>
+
+    {props.feedList.map((feed, index) =>
     <Feed
-      username1="Bob"
-      post1="stuff and stuff"
-      username2="Sue"
-      post2="stuff and stuff and stuff"/>
+      username={feed.name}
+      post={feed.post}
+      key={index}/>
+    )}
     </div>
   );
 }
+
+FeedList.propTypes = {
+  feedList: PropTypes.array.isRequired
+};
 
 export default FeedList;
