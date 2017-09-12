@@ -17,6 +17,8 @@ class NewPostForm extends React.Component{
     console.log(_post.value);
     this.props.onNewPostCreation(newPost);
     console.log(newPost);
+    _username.value = "";
+    _post.value = "";
     this.props.hideFormAfterSubmission();
   }
 
