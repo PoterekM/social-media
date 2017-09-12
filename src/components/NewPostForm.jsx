@@ -13,7 +13,10 @@ class NewPostForm extends React.Component{
     event.preventDefault()
     const { _username, _post} = this.refs;
     var newPost = new Feed(_username.value, _post.value);
+    console.log(_username.value);
+    console.log(_post.value);
     this.props.onNewPostCreation(newPost);
+    console.log(newPost);
     this.props.hideFormAfterSubmission();
   }
 

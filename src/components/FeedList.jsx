@@ -15,7 +15,7 @@ function FeedList(props){
 
     {props.feedList.map((feed, index) =>
     <Feed
-      username={feed.name}
+      username={feed.username}
       post={feed.post}
       key={index}/>
     )}
