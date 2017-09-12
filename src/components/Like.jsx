@@ -24,6 +24,7 @@ class Like extends React.Component {
   return (
     <div>
         <button onClick={this.addLike}>Like!</button>
+        <p>{this.state.like}</p>
     </div>
   )
 
