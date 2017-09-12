@@ -22,7 +22,7 @@ class NewPostControl extends React.Component {
   render() {
     let formAreaContent = null;
     if (this.state.formVisibleOnPage) {
-      formAreaContent = <NewPostForm onNewPostCreation={this.props.onNewPostCreation} hidePostAfterSubmission = {this.hideForm}/>
+      formAreaContent = <NewPostForm onNewPostCreation={this.props.onNewPostCreation} hideFormAfterSubmission = {this.hideForm}/>
     } else {
       formAreaContent = <button onClick={this.showForm}>Add a post!</button>;
     }
@@ -36,7 +36,9 @@ class NewPostControl extends React.Component {
 }
 
 NewPostControl.propTypes = {
-  onNewPostCreation: PropTypes.func
+  onNewPostCreation: PropTypes.func,
+
+
 }
 
 export default NewPostControl;

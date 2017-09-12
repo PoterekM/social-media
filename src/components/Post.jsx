@@ -21,8 +21,8 @@ class Post extends React.Component {
   render() {
     return (
       <div>
-        <FeedList feedList = {this.state.masterFeedList}/>
         <NewPostControl onNewPostCreation= {this.addNewFeedToList}/>
+        <FeedList feedList = {this.state.masterFeedList}/>
       </div>
     );
   }
