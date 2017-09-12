@@ -2,11 +2,13 @@ import React from "react";
 import Feed from "../models/Feed.js";
 import PropTypes from "prop-types";
 
+
 class NewPostForm extends React.Component{
 
   constructor(props) {
     super(props);
     this.handleNewPostFormSubmission = this.handleNewPostFormSubmission.bind(this);
+
   }
 
   handleNewPostFormSubmission(event) {

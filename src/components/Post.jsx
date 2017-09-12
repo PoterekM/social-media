@@ -9,8 +9,11 @@ class Post extends React.Component {
     this.state = {
       masterFeedList: [],
     };
+
     this.addNewFeedToList = this.addNewFeedToList.bind(this);
   }
+
+
 
   addNewFeedToList(newFeed){
     var newMasterFeedList = this.state.masterFeedList.slice();
